@@ -11,7 +11,6 @@ tensorflow = { version = "=1.15.3", markers = "sys_platform != 'linux'" }
 tensorflow-gpu = { version = "=1.15.3", markers = "sys_platform == 'linux'" }
 tensorflow-datasets = { version = "=2.1.0", markers = "sys_platform == 'linux'" } # For some reason compatible TFds is not installed automatically
 medical-ts-datasets = { git = "https://github.com/ExpectationMax/medical_ts_datasets.git", branch = "master" }
-brain_hypoxia_prediction = {git = "git@github.com:uzh-dqbm-cmi/brain_hypoxia_prediction.git", branch = "develop"}
 keras-transformer = { git = "https://github.com/ExpectationMax/keras-transformer.git", branch = "master" }
 scikit-learn = "^0.22.1"
 tqdm = "^4.42.0"
