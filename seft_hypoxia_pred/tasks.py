@@ -221,5 +221,8 @@ DATASET_TO_TASK_MAPPING = {
         class_weights={0: 0.5553, 1: 5.0188}
     ),
     'mimic3_mortality': BinaryClassification(),
-    'mimic3_phenotyping': MultilabelClassification(25)
+    'mimic3_phenotyping': MultilabelClassification(25),
+    'icuc_hypoxia':OnlineBinaryClassification(
+        class_weights={0: 0.5553, 1: 5.0188}
+    )
 }

@@ -12,6 +12,8 @@ from tensorflow.data.experimental import AUTOTUNE
 import tensorboard.plugins.hparams.api as hp
 from tensorboard.plugins.hparams import api_pb2
 
+import hypoxia_pred.datasets.icuc_hypoxia.icuc_hypoxia
+
 get_output_shapes = tf.compat.v1.data.get_output_shapes
 get_output_types = tf.compat.v1.data.get_output_types
 make_one_shot_iterator = tf.compat.v1.data.make_one_shot_iterator
