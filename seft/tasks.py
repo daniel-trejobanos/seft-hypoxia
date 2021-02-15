@@ -216,6 +216,9 @@ class Regression(Task):
 
 
 DATASET_TO_TASK_MAPPING = {
+    'icuc_hypoxia': OnlineBinaryClassification(
+        class_weights={0: 0.5553, 1: 5.0188}
+    ),
     'physionet2012': BinaryClassification(),
     'physionet2019': OnlineBinaryClassification(
         class_weights={0: 0.5553, 1: 5.0188}
