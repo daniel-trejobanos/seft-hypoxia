@@ -14,6 +14,7 @@ medical-ts-datasets = { git = "https://github.com/ExpectationMax/medical_ts_data
 keras-transformer = { git = "https://github.com/ExpectationMax/keras-transformer.git", branch = "master" }
 scikit-learn = "^0.22.1"
 tqdm = "^4.42.0"
+pyarrow = ">=3.0.0"
 
 [tool.poetry.dev-dependencies]
 ipdb = "^0.12.3"
