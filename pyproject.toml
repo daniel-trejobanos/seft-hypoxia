@@ -9,9 +9,9 @@ license = "BSD-3-clause"
 python = "~3.7"    # tensorflow 1.15.x is not available for python 3.8 and 3.9
 tensorflow = { version = "=1.15.3", markers = "sys_platform != 'linux'" }
 tensorflow-gpu = { version = "=1.15.3", markers = "sys_platform == 'linux'" }
-medical-ts-datasets = { git = "https://github.com/daniel-trejobanos/medical-ts-hypoxia.git", branch = "master" }
+medical-ts-datasets = { git = "https://github.com/daniel-trejobanos/medical-ts-hypoxia.git", branch = "master" } # fork to add hypoxia dataset
 keras-transformer = { git = "https://github.com/ExpectationMax/keras-transformer.git", branch = "master" }
-tensorflow-datasets = ">=2.0.0,<4.0.0"
+tensorflow-datasets = { git = "https://github.com/daniel-trejobanos/tf-ds-321.git", branch = "master"} # fork for offline tfds
 scikit-learn = "^0.22.1"
 tqdm = "^4.42.0"
 pyarrow = ">=3.0.0"
